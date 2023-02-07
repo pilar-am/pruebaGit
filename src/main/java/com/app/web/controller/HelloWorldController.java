@@ -22,10 +22,12 @@ public class HelloWorldController {
 	public String saluda2(@PathVariable (required= false) String nom) {
 		String nomDefault = "UNKNOWN";
 		if(nom!=null) {
-			return "Hola " + nom + ". Estàs executant un projecte Maven";
+			return "Hola " + nom + ". Estàs executant un projecte Pilar";
 		}else {
-			return "Hola "+ nomDefault + ". Estàs executant un projecte Maven";
+			return "Hola "+ nomDefault + ". Estàs executant un projecte Pilar";
 		}
 	}
+	
+	//En rama pilar cambio Maven por pilar
 	
 }
