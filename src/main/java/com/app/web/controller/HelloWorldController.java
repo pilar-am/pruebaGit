@@ -28,6 +28,16 @@ public class HelloWorldController {
 		}
 	}
 	
+	@GetMapping(value= {"/HelloWorld4","/HelloWorld4/{nom}"})
+	public String saluda4(@PathVariable (required= false) String nom) {
+		String nomDefault = "UNKNOWN";
+		if(nom!=null) {
+			return "Hola " + nom + ". Estàs executant un projecte Pilar";
+		}else {
+			return "Hola "+ nomDefault + ". Estàs executant un projecte Pilar";
+		}
+	}
+	
 	//En rama pilar cambio Maven por pilar
 	
 }
